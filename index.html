@@ -103,6 +103,7 @@
                         lingvo = $("#lingvo option:selected").val().replace(/[^#a-zA-Z\-]/g, '');
                         // Montru la DIV-blokon kun la ĝusta lingvo
                         $(lingvo).show();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
                         document.location.hash = lingvo;
                         $(location).attr('hash', $lingvo);
                 });
@@ -171,6 +172,6 @@
 
       <li><a href="https://1337kultur.de/2011/folge-8-stringente-sprachen/">1337kultur, Folge 8: Stringente Sprachen</a> (German)</li>
     </ul>
-    <!-- </div><a href="https://commons.wikimedia.org/wiki/File:31C3_CCH_Fairy_Dust_illuminated.JPG"><img src="640px-31C3_CCH_Fairy_Dust_illuminated.JPG" alt="La kongresejo de ekstere" /></a> -->
+    </div><a href="https://commons.wikimedia.org/wiki/File:31C3_CCH_Fairy_Dust_illuminated.JPG"><img src="640px-31C3_CCH_Fairy_Dust_illuminated.JPG" alt="La kongresejo de ekstere" /></a>
 </body>
 </html>
