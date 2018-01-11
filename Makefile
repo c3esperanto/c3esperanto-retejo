@@ -1,5 +1,5 @@
 deploy:
-	ssh vweb3.f00.net make -C /vhost/zamenhof.chaospage.com/htdocs pull
+	ssh vweb3.f00.net make -C /vhost/esperanto.chaospage.com/htdocs pull
 
 pull:
 	git pull
