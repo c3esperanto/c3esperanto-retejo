@@ -1,14 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.18.1), see www.w3.org" />
+  <link href="video-js-7.3.0/video-js.css" rel="stylesheet" type="text/css" />
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
   <title>c3esperanto</title>
   <style type="text/css">
-/*<![CDATA[*/
+  /*<![CDATA[*/
                 body {
                         font-family:sans-serif;
                         margin-left:20%;
@@ -65,24 +64,24 @@
                 /*]]>*/
   </style>
 </head>
-
 <body>
-  <script src="jquery.js" type="text/javascript">
-</script><script type="text/javascript">
-//<![CDATA[
+  <script src="jquery.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+
+  //<![CDATA[
         $(document).ready(function() {
                 // Malkaŝu ĉiujn elementojn kiuj bezonas JavaScript
                 $('#lingvoelektilo').show();
-                $('.pep_rubriko').show();
+                // $('.pep_rubriko').show();
 
                 // Kaŝu la averton ke la lingvoelektilo bezonas JavaScript
                 $('#js_averto').hide();
 
-                // Kaŝu ĉiujn tekstojn ĝis ni scias kian lingvon ni prezentu
+                // Kaŝu ĉiujn tekstojn ĝis ni scias kiun lingvon ni prezentu
                 $('div.teksto').hide();
-                                $('div.teksto_dmd').hide();
+		$('div.teksto_dmd').hide();
 
-                // Ĉu la URL jam postulas ian lingvon?
+                // Ĉu la URL jam postulas lingvon?
                 // http://is.gd/hYjQIr
                 var lingvo = '#eo';
                 if ($(location).attr('hash')){
@@ -90,11 +89,12 @@
                 }
                 // Montru la DIV-blokon kun la ĝusta lingvo
                 $(lingvo).show();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 
                 // Agordu la ĝustan valoron en la lingvoelektilo (do ni estas konsekvenca)
                 $("#lingvo").val(lingvo);
 
-                // Elektado de alia lingvo kiam la paĝo jam estas ŝargita
+                // Elekto de alia lingvo kiam la paĝo jam estas ŝargita
                 $('#lingvo').change(function() {
                         // Kaŝu ĉion ĝis ni scias kian lingvon ni prezentu
                         $('div.teksto').hide();
@@ -110,64 +110,49 @@
         });
   //]]>
   </script>
-
-  <h1 style="text-align:center">ESPERANTO &ndash; ĤAOSO INTERNACIA</h1>
-
+  <h1>ESPERANTO – ĤAOSO INTERNACIA</h1>
   <div id="lingvoelektilo">
     <select style="margin-left:auto;margin-right:auto" id="lingvo">
       <option value="#eo">
         Esperanto
       </option>
-
       <option value="#en">
         English (Angla)
       </option>
     </select>
   </div>
-
   <div id="js_averto">
     <p>Ebligu JavaScript por<br />
     montri la lingvoelektilon.</p>
   </div>
-
   <div id="kontaktoj">
     <p>Kontaktoj:<br /></p>
-
     <p><a href="https://twitter.com/c3esperanto">Twitter: @c3esperanto</a><br /></p>
   </div>
-
   <div class="teksto" id="eo" style="display:inline">
-    <h2 style="text-align:center">(Antaŭe konata per la nomo @c3zamenhof)</h2>
-
-    <p>Ni estas la Esperanto-asembleo ĉe la <a href="https://eo.wikipedia.org/wiki/%C4%A4aosa_Komunikada_Kongreso">
-    Ĥaosa Komunikada Kongreso</a>. La asembleo celas esti bazejo kaj renkontiĝloko por
-    esperanto-parolantaj kongresanoj kaj informpunkto pri la lingvo mem.</p>
-
-    <!--<p><em>La Ĥaosa Komunikada Kongreso (orig.: Chaos Communication Congress) estas ĉiujara renkontiĝo de la kodumula komunumo, okazigata de la Ĥaosa Komputila Klubo (orig.: Chaos Computer Club) en Germanio. Dum la kongreso okazas multe da prelegoj kaj laborsesioj pri teĥnikaj kaj politikaj temoj.</em> (<a href="https://eo.wikipedia.org/wiki/%C4%A4aosa_Komunikada_Kongreso">Legu pli ĉe Vikipedio.</a>)</p>-->
+    <h2>(Antaŭe konata per la nomo @c3zamenhof)</h2>
+    <p>Ni estas la Esperanto-asembleo ĉe la <a href="https://eo.wikipedia.org/wiki/%C4%A4aosa_Komunikada_Kongreso">Ĥaosa Komunikada Kongreso</a>. La asembleo celas esti bazejo kaj renkontiĝloko por esperanto-parolantaj kongresanoj kaj informpunkto pri la lingvo mem.</p><!--<p><em>La Ĥaosa Komunikada Kongreso (orig.: Chaos Communication Congress) estas ĉiujara renkontiĝo de la kodumula komunumo, okazigata de la Ĥaosa Komputila Klubo (orig.: Chaos Computer Club) en Germanio. Dum la kongreso okazas multe da prelegoj kaj laborsesioj pri teĥnikaj kaj politikaj temoj.</em> (<a href="https://eo.wikipedia.org/wiki/%C4%A4aosa_Komunikada_Kongreso">Legu pli ĉe Vikipedio.</a>)</p>-->
   </div>
-
   <div class="teksto" id="en">
-    <h2 style="text-align:center">(Formerly known as @c3zamenhof)</h2>
-
-    <!-- <p>Our page on #34c3's congress wiki: <a href="https://events.ccc.de/congress/2017/wiki/Assembly:Zamenhof">https://events.ccc.de/congress/2017/wiki/Assembly:Zamenhof</a></p> -->
-
-    <p>So where can you start learning Esperanto right now?</p>
-
+    <h2>(Formerly known as @c3zamenhof)</h2><!-- <p>Our page on #34c3's congress wiki: <a href="https://events.ccc.de/congress/2017/wiki/Assembly:Zamenhof">https://events.ccc.de/congress/2017/wiki/Assembly:Zamenhof</a></p> -->
+    <h3>First things first: How to pronounce it</h3>
+    <div>
+      <video id="my-video" class="video-js" controls="" preload="auto" width="640" height="360" poster="video/c3eo-devizo.jpg" data-setup="{}"><source src="video/c3eo-devizo_1.mp4" type='video/mp4' />
+      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p></video>
+    </div>
+    <hr />
+    <h3>So where can you start learning Esperanto right now?</h3>
     <ul>
       <li><a href="http://lernu.net">lernu.net</a></li>
-
       <li><a href="http://duolingo.com">duolingo.com</a></li>
     </ul>
-
-    <p>Our local mirror of "Esperanto in your pocket" is here: <a href="pocket-guide.pdf">PDF</a></p>
-
     <p>If you start learning before christmas 2018, you'll be able to speak simple sentences at #35c3. Trust us on that one.</p>
-
+    <hr />
+    <p>Our local mirror of "Esperanto in your pocket" is here: <a href="pocket-guide.pdf">PDF</a></p>
+    <hr />
     <p>You need more information? Here you go.</p>
-
     <ul>
       <li><a href="https://media.ccc.de/v/22C3-503-de-esperanto">22c3: Esperanto, die internationale Sprache</a> (German)</li>
-
       <li><a href="https://1337kultur.de/2011/folge-8-stringente-sprachen/">1337kultur, Folge 8: Stringente Sprachen</a> (German)</li>
     </ul>
   </div>
