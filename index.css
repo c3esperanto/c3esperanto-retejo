@@ -1,0 +1,53 @@
+body {
+	font-family:sans-serif;
+	margin-left:20%;
+	margin-right:20%;
+	background-image:url(c3-eo-stamp-bg.png);
+	background-repeat:no-repeat;
+	background-color:white;
+	background-size:cover;
+}
+a {
+	text-decoration:none;
+	color:#004d00;
+}
+.teksto {
+	/* Ne funkciu tro malbone sen JavaScript: Kaŝu ĉiujn tekstojn */
+	/* La EO teksto havas rektan formaton 'display:inline' */
+	display:none;
+	line-height:120%;
+}
+.teksto_dmd {
+	/* Ne funkciu tro malbone sen JavaScript: Kaŝu ĉiujn tekstojn */
+	/* La EO teksto havas rektan formaton 'display:inline' */
+	display:none;
+	direction:rtl;
+}
+
+#lingvoelektilo {
+	/* Kaŝu la lingvoelektilon ĝis ni scias ĉu JavaScript disponeblas */
+	display:none;
+	position:fixed;
+	top:20px;
+	left:20px;
+}
+#js_averto {
+	/* Tio ĉi aperas anstataŭ la lingvoelektilo se JavaScript ne disponeblas. */
+	font-size:xx-small;
+	position:fixed;
+	top:20px;
+	left:20px;
+	background-color:#dddddd;
+}
+#kontaktoj {
+	font-size:xx-small;
+	position:fixed;
+	bottom:20px;
+	left:20px;
+}
+.query {
+	/* Ne necesas kaŝi tion, ĉar la DIV defaŭlte estas malplena. */
+	font-size:x-small;
+	margin-left:40%;
+	width:60%;
+}
