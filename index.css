@@ -4,11 +4,16 @@ body {
 	margin-right:20%;
 	background-image:url(c3-eo-stamp-bg-nigra.png);
 	background-repeat:no-repeat;
-	background-color:white;
+	background-color:black;
 	background-size:cover;
 	color:white;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
 }
-a {
+a,a:visited {
 	text-decoration:none;
 	color:#009900;
 }
@@ -28,7 +33,6 @@ a {
 #lingvoelektilo {
 	/* Kaŝu la lingvoelektilon ĝis ni scias ĉu JavaScript disponeblas */
 	display:none;
-	position:fixed;
 }
 #js_averto {
 	/* Tio ĉi aperas anstataŭ la lingvoelektilo se JavaScript ne disponeblas. */
@@ -66,4 +70,19 @@ hr {
 	display: inline-block;
 	padding: 1px;
 	background-color: #009900;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		-o-hyphens: auto;
+		hyphens: auto;
+	}
+	#supra-ujo,#baza-ujo {
+		position: static;
+	}
 }

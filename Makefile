@@ -1,5 +1,5 @@
 deploy:
-	ssh vweb3.f00.net make -C /vhost/c3eo.chaotik.de/htdocs pull
+	ssh -A vweb3.f00.net make -C /vhost/c3eo.chaotik.de/htdocs pull
 
 pull:
 	git pull
