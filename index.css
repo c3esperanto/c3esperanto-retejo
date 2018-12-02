@@ -2,14 +2,15 @@ body {
 	font-family:sans-serif;
 	margin-left:20%;
 	margin-right:20%;
-	background-image:url(c3-eo-stamp-bg.png);
+	background-image:url(c3-eo-stamp-bg-nigra.png);
 	background-repeat:no-repeat;
 	background-color:white;
 	background-size:cover;
+	color:white;
 }
 a {
 	text-decoration:none;
-	color:#004d00;
+	color:#009900;
 }
 .teksto {
 	/* Ne funkciu tro malbone sen JavaScript: Kaŝu ĉiujn tekstojn */
@@ -28,19 +29,20 @@ a {
 	/* Kaŝu la lingvoelektilon ĝis ni scias ĉu JavaScript disponeblas */
 	display:none;
 	position:fixed;
-	top:20px;
-	left:20px;
 }
 #js_averto {
 	/* Tio ĉi aperas anstataŭ la lingvoelektilo se JavaScript ne disponeblas. */
 	font-size:xx-small;
 	position:fixed;
+}
+#supra-ujo {
+	font-size:x-small;
+	position:fixed;
 	top:20px;
 	left:20px;
-	background-color:#dddddd;
 }
-#kontaktoj {
-	font-size:xx-small;
+#baza-ujo {
+	font-size:x-small;
 	position:fixed;
 	bottom:20px;
 	left:20px;
@@ -50,4 +52,18 @@ a {
 	font-size:x-small;
 	margin-left:40%;
 	width:60%;
+}
+hr {
+	margin: 25px;
+	border: 0; 
+	height: 1px; 
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, rgba(192, 192, 192, 0), rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0)); 
+}
+#videujo {
+	display: inline-block;
+	padding: 1px;
+	background-color: #009900;
 }
