@@ -73,32 +73,3 @@ hr {
 	padding: 1px;
 	background-color: #009900;
 }
-
-/*
-@media 
-only screen and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2),
-only screen and (max-width: 800px) {
-	body {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	#supra-ujo,#baza-ujo {
-		position: static;
-	}
-}
-@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) {
-	body {
-		-moz-text-size-adjust: 300%;
-		-webkit-text-size-adjust: 300%;
-		-ms-text-size-adjust: 300%;
-		-o-text-size-adjust: 300%;
-		text-size-adjust: 300%;
-	}
-	select#lingvo {
-		font-size: large;
-	}
-		
-		
-}
-*/

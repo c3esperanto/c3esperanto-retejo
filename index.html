@@ -50,13 +50,47 @@
                         // Montru la DIV-blokon kun la ĝusta lingvo
                         $(lingvo).show();
                         $("html, body").animate({ scrollTop: 0 }, "slow");
-                        document.location.hash = lingvo;
-                        $(location).attr('hash', $lingvo);
+                        $(location).attr('hash', lingvo);
                 });
+		cxu_mobiltelefono();
         });
+	$(window).resize(cxu_mobiltelefono);
+	function cxu_mobiltelefono() {
+		if ($(window).height() > $(window).width()){
+			$('body').css("margin-left", "0");
+			$('body').css("margin-right", "0");
+			$('#supra-ujo').css("position", "static");
+			$('#baza-ujo').css("position", "static");
+			$('select#lingvo').css("font-size", "25px");
+			if (window.devicePixelRatio > 2){
+				$('body').css("-moz-text-size-adjust", "300%");
+				$('body').css("-webkit-text-size-adjust", "300%");
+				$('body').css("-ms-text-size-adjust", "300%");
+				$('body').css("-o-text-size-adjust", "300%");
+				$('body').css("text-size-adjust", "300%");
+			}else{
+				$('body').css("-moz-text-size-adjust", "");
+				$('body').css("-webkit-text-size-adjust", "");
+				$('body').css("-ms-text-size-adjust", "");
+				$('body').css("-o-text-size-adjust", "");
+				$('body').css("text-size-adjust", "");
+			}
+		}else{
+			$('body').css("margin-left", "");
+			$('body').css("margin-right", "");
+			$('#supra-ujo').css("position", "");
+			$('#baza-ujo').css("position", "");
+			$('select#lingvo').css("font-size", "");
+			$('body').css("-moz-text-size-adjust", "");
+			$('body').css("-webkit-text-size-adjust", "");
+			$('body').css("-ms-text-size-adjust", "");
+			$('body').css("-o-text-size-adjust", "");
+			$('body').css("text-size-adjust", "");
+	}
+	};
   //]]>
   </script>
-  <h1>ESPERANTO – ĤAOSO INTERNACIA</h1>
+  <h1>Esperanto – Ĥaoso Internacia</h1>
   <div id="supra-ujo">
     <div id="lingvoelektilo">
       <select id="lingvo">
