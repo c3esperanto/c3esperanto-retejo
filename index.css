@@ -1,17 +1,15 @@
 body {
 	font-family:sans-serif;
-	margin-left:20%;
-	margin-right:20%;
 	background-image:url(c3-eo-stamp-bg-nigra.png);
 	background-repeat:no-repeat;
 	background-color:black;
-	background-size:cover;
 	color:white;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	-o-hyphens: auto;
 	hyphens: auto;
+	text-align: center;
 }
 a,a:visited {
 	text-decoration:none;
@@ -29,35 +27,17 @@ a,a:visited {
 	display:none;
 	direction:rtl;
 }
-
 #lingvoelektilo {
 	/* Kaŝu la lingvoelektilon ĝis ni scias ĉu JavaScript disponeblas */
 	display:none;
-	margin-left:auto;
-	margin-right:auto;
 }
 #js_averto {
 	/* Tio ĉi aperas anstataŭ la lingvoelektilo se JavaScript ne disponeblas. */
 	font-size:xx-small;
 	position:fixed;
 }
-#supra-ujo {
-	font-size:x-small;
-	position:fixed;
-	top:20px;
-	left:20px;
-}
-#baza-ujo {
-	font-size:x-small;
-	position:fixed;
-	bottom:20px;
-	left:20px;
-}
-.query {
-	/* Ne necesas kaŝi tion, ĉar la DIV defaŭlte estas malplena. */
-	font-size:x-small;
-	margin-left:40%;
-	width:60%;
+.emblemo {
+	padding: 10px;
 }
 hr {
 	margin: 25px;
@@ -72,4 +52,7 @@ hr {
 	display: inline-block;
 	padding: 1px;
 	background-color: #009900;
+}
+ul {
+	display: inline-block;
 }

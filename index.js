@@ -42,10 +42,6 @@ function cxu_mobiltelefono() {
 	console.log("Ĉu mobiletelefono?");
 	if ($(window).height() > $(window).width()){
 		console.log("Verŝajne jes: Ekrano estas pli alta ol vasta.");
-		$('body').css("margin-left", "0");
-		$('body').css("margin-right", "0");
-		$('#supra-ujo').css("position", "static");
-		$('#baza-ujo').css("position", "static");
 		$('select#lingvo').css("font-size", "25px");
 		if (window.devicePixelRatio > 2){
 			console.log("Retina-ekrano.");
@@ -64,10 +60,6 @@ function cxu_mobiltelefono() {
 		}
 	}else{
 		console.log("Verŝajne ne mobiltelefono.");
-		$('body').css("margin-left", "");
-		$('body').css("margin-right", "");
-		$('#supra-ujo').css("position", "");
-		$('#baza-ujo').css("position", "");
 		$('select#lingvo').css("font-size", "");
 		$('body').css("-moz-text-size-adjust", "");
 		$('body').css("-webkit-text-size-adjust", "");
