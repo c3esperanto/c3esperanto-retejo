@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Esperanto Speaker Count</title>
+  <link rel="stylesheet" type="text/css" href="jayKayEss-Flapper-1bbbf2e/css/flapper.css">
+  <script type="text/javascript" src="/jquery.js"></script>
+  <script type="text/javascript" src="jquery.transform-0.9.3.min.js"></script>
+  <script type="text/javascript" src="jayKayEss-Flapper-1bbbf2e/src/jquery.flapper.js"></script>
+  <script type="text/javascript">
+
+  // MDR, jes, memkompreneble la nombro estas arbitra, 
+  // baze de la UNIX-tempo ekde la epoko / 2000.
+  var parolantoj = Math.round((new Date()).getTime() / 2000000);
+  
+  // DON'T BE SILLY, NO SUCH THING AS OFFICIAL DATA EXISTS!
+
+  // Ĉiujn 5 sekundojn aldoni hazardan nombron
+  $(document).ready(function() {
+	$('#nombrilo').flapper({width: 7});
+	montru_nombron(parolantoj);
+	setInterval(function() {
+		haz = Math.floor(Math.random() * 5) - 1;     
+		parolantoj = parolantoj + haz;
+		if (haz != 0){
+			montru_nombron('');
+			montru_nombron(parolantoj);
+		}
+	}, 5000);
+  });
+  function montru_nombron(parolantoj) {
+	$('#nombrilo').val(parolantoj).change();
+  }
+  </script>
+  <style type="text/css">
+  	body {
+		background: #111111;
+		color: white;
+		text-align: center;
+		margin-top: 15%;
+		font-family: sans-serif;
+	}
+	#subskribo {
+		font-size: xx-small;
+		color: #555555;
+	}
+
+  </style>
+</head>
+<body>
+<h1 id="superskribo">Official Esperanto Speaker count <sup>★</sup></h1>
+<input id="nombrilo" class="XXL"/>
+<p id="subskribo"><sup>★</sup> The counter is based on all officially available data, extrapolated over time.</p>
+</body>
+</html>
+
