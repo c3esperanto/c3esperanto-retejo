@@ -10,26 +10,45 @@
   <script type="text/javascript" src="jayKayEss-Flapper-1bbbf2e/src/jquery.flapper.js"></script>
   <script type="text/javascript">
 
+
+
+  // DON'T BE SILLY, NO SUCH THING AS OFFICIAL DATA EXISTS!
+
+
+
   // MDR, jes, memkompreneble la nombro estas arbitra, 
   // baze de la UNIX-tempo ekde la epoko / 2000.
   var parolantoj = Math.round((new Date()).getTime() / 2000000);
   var chars = [' ','0','1','2','3','4','5','6','7','8','9'];
-  
-  // DON'T BE SILLY, NO SUCH THING AS OFFICIAL DATA EXISTS!
 
-  // Ĉiujn 5 sekundojn aldoni hazardan nombron
+  // Ĉiujn 30 sekundojn aldoni hazardan nombron
   $(document).ready(function() {
 	$('#nombrilo').flapper({width: 7, chars: chars});
 	montru_nombron(parolantoj);
 	setInterval(function() {
-		haz = Math.floor(Math.random() * 6) - 1;     
-		parolantoj = parolantoj + haz;
-		if (haz != 0){
+		// ni volas hazarde kreskigi aŭ malkreskigi la nombron,
+		// do, ni prenas rezulton de Math.random kaj duobligas ĝin:
+		// kaj ricevas 0 <= haz1 < 2
+		// Math.floor de haz1 ĉiam estus 0 aŭ 1, do ni subtraktas valoron
+		// "salo" kiu foje igas haz2 < 0 do Math.floor = -1
+		// Gravaj limvaloroj:
+		// salo > 0     -> nombro daŭre kreskas
+		// salo = -1    -> nombro averaĝe restas la sama
+		// salo < -1.5  -> nombro daŭre falas
+		salo = -0.25;
+		haz1 = Math.random() * 2;     
+		haz2 = haz1 + salo;     
+		haz3 = Math.floor(haz2);
+		parolantoj = parolantoj + haz3;
+		console.log("Math.random * 2 = " + haz1 + " + " + salo + " = " 
+			+ haz2 + " -> Math.floor=" + haz3 + " -> " + parolantoj);
+		if (haz3 != 0){
 			montru_nombron(parolantoj);
 		}
-	}, 5000);
+	}, 3000);
   });
   function montru_nombron(parolantoj) {
+	// $('#nombrilo').val('       ').change();
 	$('#nombrilo').val(parolantoj).change();
   }
   </script>
