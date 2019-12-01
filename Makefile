@@ -1,8 +1,8 @@
-deploy:
-	ssh -A vweb3.f00.net make -C /vhost/c3eo.chaotik.de/htdocs pull
+all:
+	jekyll build
+	make upload
 
-pull:
-	git pull
+upload:
+	scp -r dosieroj/ _site/* martin@vweb3.f00.net:/vhost/c3eo.chaotik.de/htdocs/
 
-tidy:
-	tidy -m -w 0 -i -utf8 -asxhtml index.html
+

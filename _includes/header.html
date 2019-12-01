@@ -1,0 +1,12 @@
+<header>
+  <div>
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+    {% assign owner_first_name = site.owner | split: " " %}
+    <!-- <h1>{{ page.title }}</h1> -->
+    <img src='/dosieroj/eo-36c3-trans-malgranda.png' alt='Esperanto 36C3' style='display:block;margin-left:auto;margin-right:auto;'/>
+    </a>
+    <div class="header-links">
+      {% include links.html %}
+    </div>
+  </div>
+</header>
