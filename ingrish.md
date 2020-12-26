@@ -12,13 +12,7 @@ permalink: /ingrish/
 
 The Esperanto assembly wants to serve as a gathering point for speakers 
 and friends of the international language Esperanto as well as other constructed 
-languages. Don't be afraid to join us and use us for taking a break or as a 
-base camp during your explorations at 36c3.
-
-### How to find us at congress
-
-The 36c3 assembly is located (tbd). The fixed-line eventphone at the assembly 
-can be reached at the number 3776 (ESPO).
+languages. 
 
 ### So where can you start learning Esperanto right now?
 

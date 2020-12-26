@@ -12,6 +12,4 @@ La unua fojo kiam ni aperis ĉe kongreso estis dum 33c3, ankoraŭ kun la nomo
 ni simple estas la Esperanto-asembleo.
 
 Ni celas esti renkontiĝloko por parolantoj kaj amikoj de la internacia 
-lingvo Esperanto kaj cetere por ĉiuj interesiĝantoj pri planlingvoj. Ne 
-timu aliĝi nin, uzi nin por ripozi aŭ kiel baztendaro dum viaj esploroj ĉe 
-36c3.
+lingvo Esperanto kaj cetere por ĉiuj interesiĝantoj pri planlingvoj. 
