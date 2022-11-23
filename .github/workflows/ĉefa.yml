@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-#      - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ruby
+      - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y jekyll
 #      - run: sudo gem install bundler jekyll
       - run: jekyll build
 #      - run: make
