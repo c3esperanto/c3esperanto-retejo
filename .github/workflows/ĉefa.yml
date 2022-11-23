@@ -1,4 +1,4 @@
-name: build and upload site
+name: kunmeti kaj alŝuti retejon
 on:
   push:
     branches: [ "main" ]
@@ -7,12 +7,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-upload:
+  kunmetu-kaj-alŝutu:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - run: DEBIAN_FRONTEND=noninteractive apt-get install -y ruby
       - run: gem install bundler jekyll
-      - run: make
+#      - run: make
 #      - uses: mschmitt/rsync-with-ssh-agent@v2
 #       with:
 #          SSH_KEY: ${{ secrets.SSH_KEY }}
