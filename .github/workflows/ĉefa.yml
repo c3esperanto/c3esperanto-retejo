@@ -20,4 +20,4 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: c3eo.chaotik.de
           RSYNC_LOCAL_PATH: '_site/'
-          RSYNC_OPTIONS: '--recursive --delete --verbose --dry-run'
+          RSYNC_OPTIONS: '--recursive --exclude .well-known --delete --verbose --dry-run'
