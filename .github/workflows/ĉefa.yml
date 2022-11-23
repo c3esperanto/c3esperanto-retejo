@@ -11,9 +11,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ruby-bundler
-      - run: sudo gem install jekyll
-      - run: bundler jekyll build
+      - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y jekyll
+      - run: jekyll build
 #      - run: make
 #      - uses: mschmitt/rsync-with-ssh-agent@v2
 #       with:
