@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  kunmetu-kaj-alŝutu:
+  kunmetu-kaj-alsxutu:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
