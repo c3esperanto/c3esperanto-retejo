@@ -13,12 +13,11 @@ jobs:
       - uses: actions/checkout@v3
       - run: sudo DEBIAN_FRONTEND=noninteractive apt-get install -y jekyll
       - run: jekyll build
-#      - run: make
-#      - uses: mschmitt/rsync-with-ssh-agent@v2
-#       with:
-#          SSH_KEY: ${{ secrets.SSH_KEY }}
-#          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
-#          SSH_USER: martin
-#          SSH_HOST: c3eo.chaotik.de
-#          RSYNC_LOCAL_PATH: 'site/'
-#          RSYNC_OPTIONS: '--exclude ".*" --recursive --delete-excluded --verbose'
+      - uses: mschmitt/rsync-with-ssh-agent@v2
+       with:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+          SSH_USER: ${{ secrets.USER }}
+          SSH_HOST: c3eo.chaotik.de
+          RSYNC_LOCAL_PATH: '_site/'
+          RSYNC_OPTIONS: '--recursive --delete --verbose --dry-run'
