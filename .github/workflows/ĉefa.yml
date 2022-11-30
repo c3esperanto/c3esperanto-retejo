@@ -15,7 +15,7 @@ jobs:
       - run: jekyll build
       - uses: actions/upload-artifact@v3
         with:
-          name: site
+          name: _site
           path: _site
           retention-days: 1
   alsxuto:
