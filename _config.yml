@@ -1,3 +1,5 @@
 title: Ĥaoso Internacia
 exclude:
   - README.md
+  - hacker-blog-master/
+  - master.zip
