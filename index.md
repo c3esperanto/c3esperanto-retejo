@@ -4,8 +4,12 @@ title: Saluton!
 naviorder: 0
 ---
 
+### "Ĥaoso Internacia"
+
+[For information in english, click here.](ingrish)
+
 Ni estas Ĥaoso Internacia, la Esperanto-asembleo ĉe la ĥaosa komunikada
-kongreso kaj aliaj aranĝoj de la ĥaosa komunikada klubo el germanio.
+kongreso.
 
 La unua fojo kiam ni aperis ĉe kongreso estis dum 33c3, ankoraŭ kun la nomo
 "Zamenhof-asembleo". La tiama nomo postulis tro multe da klarigo, kaj ekde 35c3,
