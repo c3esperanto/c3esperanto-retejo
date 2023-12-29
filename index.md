@@ -6,7 +6,7 @@ naviorder: 0
 
 ### "Ĥaoso Internacia"
 
-[For information in english, click here.](ingrish)
+[For information and links to resources in english, click here.](ingrish)
 
 Ni estas Ĥaoso Internacia, la Esperanto-asembleo ĉe la ĥaosa komunikada
 kongreso.
