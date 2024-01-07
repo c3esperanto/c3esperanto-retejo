@@ -32,6 +32,7 @@ Our local mirror of "Esperanto in your pocket" is here: [PDF](/dosieroj/pocket-g
 
 ### Talks and podcasts
 
+* [kern.punkto - Podcast by members of the Assembly (Esperanto)](https://kern.punkto.info)
 * [22c3: Esperanto, die internationale Sprache (German)](https://media.ccc.de/v/22C3-503-de-esperanto)
 * [1337kultur, Folge 8: Stringente Sprachen (German)](https://1337kultur.de/2011/folge-8-stringente-sprachen/)
-* [kern.punkto - Podcast by members of the Assembly (Esperanto)](https://kern.punkto.info)
+* [Datenspuren 2023: Mit Esperanto Sprache hacken (German)](https://media.ccc.de/v/ds23-235-mit-esperanto-sprache-hacken)
