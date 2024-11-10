@@ -4,11 +4,9 @@ title: Atingi nin?
 permalink: /atingo/
 ---
 
-### 37a ĥaosa komunikada kongreso
+### 38a ĥaosa komunikada kongreso
 
-La asembleo troviĝas en Halo H, proxime al la enirejo: [C3Nav](https://37c3.c3nav.de/l/esperanto/@0,165.08,116.83,5)
-
-Ni havas fiksan telefonon ĉe la asembleo: **2330** (*C3EO*)
+Informojn, kie nia asembleo troviĝas, ni publikigas ĉi tie kiam ni havas ilin.
 
 ### Daŭra komunikado
 
