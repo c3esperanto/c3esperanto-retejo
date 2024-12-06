@@ -1,5 +1,5 @@
 /*
-   original: https://github.com/pages-themes/hacker 
+   original: https://github.com/pages-themes/hacker
 */
 
 @import "rouge-base16-dark";
@@ -73,8 +73,8 @@ header h1 {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+               0 0 5px #30ff300f,
+               0 0 10px #30ff300f;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -102,8 +102,8 @@ h1, h2, h3, h4, h5, h6 {
   color: $header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+               0 0 5px #30ff300f,
+               0 0 10px #30ff300f,
 }
 
 #main_content h1 {
@@ -141,7 +141,12 @@ dt {
 }
 
 ul li {
-  list-style-image:url('../assets/bullet.png');
+    list-style-type: none;
+}
+
+ul li::before {
+    content: ">> ";
+    color: #30ff30;
 }
 
 blockquote {
@@ -155,7 +160,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #b5e853;
+  color: #30ff30;
   border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
@@ -178,7 +183,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #30ff30;
   padding: 5px 10px;
 }
 
@@ -189,8 +194,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed #30ff30;
+  color: #30ff30;
 }
 
 /* Buttons
