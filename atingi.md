@@ -6,7 +6,7 @@ permalink: /atingo/
 
 ### 38a ĥaosa komunikada kongreso
 
-Informojn, kie nia asembleo troviĝas, ni publikigas ĉi tie kiam ni havas ilin.
+La asembleo troviĝas ĉe [I5, Saal 3 Foyer, EG](https://38c3.c3nav.de/l/esperanto/)
 
 ### Daŭra komunikado
 
