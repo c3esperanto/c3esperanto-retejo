@@ -237,11 +237,8 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: "OfficerSans";
-  color: $header;
+  color: #00ff00;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px #30ff300f,
-               0 0 10px #30ff300f,
 }
 
 #main_content h1 {
