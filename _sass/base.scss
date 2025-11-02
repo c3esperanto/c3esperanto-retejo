@@ -184,6 +184,19 @@ header {
     color: #00ff00;
 }
 
+@media (max-width: 600px) {
+    .headline {font-size: 36pt;}
+    .header-link {display: block;}
+    .header-links a::before {
+	content: "★ ";
+	color: #00ff00;
+    }
+    .header-links a::after {
+	content: " ★";
+	color: #00ff00;
+    }
+}
+
 
 header h1 {
   font-size: 24px;
