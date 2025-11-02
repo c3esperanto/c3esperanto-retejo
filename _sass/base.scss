@@ -172,16 +172,19 @@ header {
 .header-links a::after {
     content: " ★";
     color: #00ff00;
+    font-size: x-large;
 }
 
 .header-links a::after {
     content: " ★";
     color: #00ff00;
+    font-size: x-large;
 }
 
 .header-links > a:first-child::before {
     content: "★ ";
     color: #00ff00;
+    font-size: x-large;
 }
 
 @media (max-width: 600px) {
@@ -190,10 +193,7 @@ header {
     .header-links a::before {
 	content: "★ ";
 	color: #00ff00;
-    }
-    .header-links a::after {
-	content: " ★";
-	color: #00ff00;
+	font-size: x-large;
     }
 }
 
@@ -406,6 +406,8 @@ a:active, a:focus {
   height: 50px;
   line-height: 50px;
   text-align: center;
+  color: #00ff00;
+  font-size: x-large;
 }
 
 #wrapper {
