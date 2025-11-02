@@ -3,7 +3,42 @@
 */
 
 @import "rouge-base16-dark";
-@import "default_colors";
+
+@font-face {
+    font-family: 'OfficerSans';
+    src: url(/fonts/OfficerSans/OfficerSansWeb-Regular.woff) format("woff"),
+	 url(/fonts/OfficerSans/OfficerSansWeb-Regular.woff2) format("woff2");
+    font-weight: regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OfficerSans';
+    src: url(/fonts/OfficerSans/OfficerSansWeb-Bold.woff) format("woff"),
+	 url(/fonts/OfficerSans/OfficerSansWeb-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OfficerSans';
+    src: url(/fonts/OfficerSans/OfficerSansWeb-RegularItalic.woff) format("woff"),
+	 url(/fonts/OfficerSans/OfficerSansWeb-RegularItalic.woff2) format("woff2");
+    font-weight: regular;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'OfficerSans';
+    src: url(/fonts/OfficerSans/OfficerSansWeb-BoldItalic.woff) format("woff"),
+	 url(/fonts/OfficerSans/OfficerSansWeb-BoldItalic.woff2) format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Kario';
+	src: URL('/fonts/Kario/Kario39C3Var-Roman.ttf') format('truetype');
+	src: URL('/fonts/Kario/Kario39C3Var-Roman.woff') format('woff');
+	src: URL('/fonts/Kario/Kario39C3Var-Roman.woff2') format('woff2');
+}
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
@@ -14,11 +49,11 @@ $blockquote-border: $dove-grey !default;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../assets/bkg.png") 0 0;
+  background: #141414;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "OfficerSans";
 }
 
 /* General & 'Reset' Stuff */
@@ -50,19 +85,105 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: #141414;
   border-bottom: 1px dashed $conifer; //header;
   padding: 20px;
   margin: 0 0 40px 0;
 }
 
+.headline {
+    text-align: center;
+    font-family: Kario;
+    font-size: 52pt;
+    font-kerning: none;
+    min-height: 5em;
+}
+
+@keyframes cycles {
+    0% {font-weight: 10;}
+    50% {font-weight: 100;}
+    100% {font-weight: 10;}
+}
+@keyframes cycles-backwards {
+    0% {font-weight: 100;}
+    50% {font-weight: 10;}
+    100% {font-weight: 100;}
+}
+
+#esperanto {
+    color: #00ff00;
+    text-transform: uppercase;
+    animation: cycles 5s infinite;
+}
+
+
+@keyframes language-cycle {
+    0% {font-weight: 10; opacity: 0;}
+    10% {opacity: 1;}
+    25% {font-weight: 100; opacity: 1;}
+    50% {font-weight: 10; opacity: 1;}
+    60% {opacity: 0;}
+    100% {font-weight: 10; opacity: 0;}
+}
+
+#congress-title {
+    color: #fff;
+}
+
+#congress-title > span:first-child {
+    animation: cycles-backwards 5s infinite;
+}
+#congress-title > span:nth-child(2) {
+    animation: cycles 5s infinite;
+}
+
+#congress-motto {
+    position: relative;
+    text-transform: uppercase;
+}
+#congress-motto > span {
+    position: absolute;
+    top: 0; left: 0; right:0;
+}
+
+#congress-motto > span:first-child {
+    animation: language-cycle 10s infinite;
+}
+#congress-motto > span:nth-child(2) {
+    animation: language-cycle 10s infinite;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+
+
 .header-links {
-  text-align: center;
+    text-align: center;
+    font-family: Kario;
+    font-size: larger;
+    font-weight: 42;
 }
 
 .header-link {
-  display: inline;
+    display: inline;
+    font-family: Kario;
 }
+
+.header-links a::after {
+    content: " ★";
+    color: #00ff00;
+}
+
+.header-links a::after {
+    content: " ★";
+    color: #00ff00;
+}
+
+.header-links > a:first-child::before {
+    content: "★ ";
+    color: #00ff00;
+}
+
 
 header h1 {
   font-size: 24px;
@@ -70,11 +191,11 @@ header h1 {
   margin: 0;
   text-align: center;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "OfficerSans";
   color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px #30ff300f,
-               0 0 10px #30ff300f;
+               0 0 5px #00ff00,
+               0 0 10px #00ff00;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -82,7 +203,11 @@ header h1 {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #b69dfe;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 /* Main Content
@@ -98,7 +223,7 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "OfficerSans";
   color: $header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -156,11 +281,11 @@ blockquote {
 }
 
 pre {
-  background: rgba(0, 0, 0, 0.9);
+  background: #141414;
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #30ff30;
+  color: #00ff00;
   border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
@@ -183,7 +308,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #30ff30;
+  border-bottom: 1px dashed #00ff00;
   padding: 5px 10px;
 }
 
@@ -194,8 +319,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #30ff30;
-  color: #30ff30;
+  border-bottom: 1px dashed #00ff00;
+  color: #00ff00;
 }
 
 /* Buttons
@@ -210,7 +335,7 @@ hr {
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "OfficerSans";
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;
@@ -241,7 +366,7 @@ hr {
 
 a {
   color: #B2AAFF;
-  text-shadow: 0 0 5px #6A5FDB0f;
+  text-shadow: 0 0 5px #9673ff;
 }
 
 a:active, a:focus {

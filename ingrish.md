@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ingrish plz?
+title: For those who don't understand
 permalink: /ingrish/
 ---
 
@@ -10,9 +10,9 @@ permalink: /ingrish/
 
 {% include videoludilo.html %}
 
-The Esperanto assembly wants to serve as a gathering point for speakers 
-and friends of the international language Esperanto as well as other constructed 
-languages. 
+The Esperanto assembly wants to serve as a gathering point for speakers
+and friends of the international language Esperanto as well as other constructed
+languages.
 
 ### So where can you start learning Esperanto right now?
 
