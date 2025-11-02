@@ -20,7 +20,7 @@ ni anoncos ĉi tie.
 
 ### Kradvorto
 
-En la fediverso ni uzas la kradvorton #39c3-eo. Tie ni hupas sciindaĵojn pri la
+En la fediverso ni uzas la kradvorton #39c3eo. Tie ni hupas sciindaĵojn pri la
 kongreso kaj Esperanto. Vi povas hupi en tiu kradvorto, se vi volas kontakti
 nin dum la kongreso.
 

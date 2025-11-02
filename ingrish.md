@@ -30,7 +30,7 @@ location we will announce here.
 
 ## Contact us
 
-You can use the hashtag #39c3-eo on fediverse.
+You can use the hashtag #39c3eo on fediverse.
 
 
 ## So where can you start learning Esperanto right now?
