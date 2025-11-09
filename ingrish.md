@@ -31,9 +31,17 @@ There will be a teaser course about Esperanto at the congress. Exact time and
 location we will announce here.
 
 
-## Contact us
+### T-shirts and other stuff
 
-You can use the hashtag #39c3eo on fediverse.
+As usual we esperantized the disign of the congress. You can order for example
+[shirts](https://www.redbubble.com/i/hoodie/Esperanto-povocikloj-39C3-by-ShopEvaF/175518042.UP7IL)
+and other suff with the esperantized motive of the congress.
+
+
+### Contact us
+
+You can use the hashtag #39c3eo on fediverse. Of course you can also come to
+our assembly to have chat with us, drink a Tschunk or a Mate.
 
 
 ## So where can you start learning Esperanto right now?

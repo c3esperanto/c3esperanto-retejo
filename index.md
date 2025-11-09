@@ -15,3 +15,16 @@ kongreso.
 
 Ni celas esti renkontiĝloko por parolantoj kaj amikoj de la internacia
 lingvo Esperanto, kaj ĉiuj interesiĝantoj pri planlingvoj.
+
+
+## T-ĉemizoj kaj similaj
+
+Kiel kutime ni esperantigis la dizajnon de la kongreso. Vi povas ekzemple mendi
+[kongresajn t-ĉemizojn](https://www.redbubble.com/i/hoodie/Esperanto-povocikloj-39C3-by-ShopEvaF/175518042.UP7IL)
+aŭ aliajn aferojn kun la esperantigita motivo de la kongreso.
+
+
+## Alparolu aŭ kontaktu nin.
+
+Venu al nia asembleo en la kongreso aŭ hupu mastodone al #39c3eo. Ni antaŭĝojas
+kune trinki ĉunkon aŭ mateon.
