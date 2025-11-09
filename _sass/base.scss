@@ -172,18 +172,15 @@ header {
 .header-links a::after {
     content: " ★";
     color: #00ff00;
+    text-shadow: 0 0 5px;
     font-size: x-large;
 }
 
-.header-links a::after {
-    content: " ★";
-    color: #00ff00;
-    font-size: x-large;
-}
 
 .header-links > a:first-child::before {
     content: "★ ";
     color: #00ff00;
+    text-shadow: 0 0 5px;
     font-size: x-large;
 }
 
@@ -193,6 +190,7 @@ header {
     .header-links a::before {
 	content: "★ ";
 	color: #00ff00;
+	text-shadow: 0 0 5px;
 	font-size: x-large;
     }
 }
@@ -238,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: "OfficerSans";
   color: #00ff00;
+  text-shadow: 0 0 5px;
   letter-spacing: -0.03em;
 }
 
@@ -376,7 +375,7 @@ hr {
 
 a {
   color: #B2AAFF;
-  text-shadow: 0 0 5px #9673ff;
+  text-shadow: 0 0 5px;
 }
 
 a:active, a:focus {
@@ -407,6 +406,7 @@ a:active, a:focus {
   line-height: 50px;
   text-align: center;
   color: #00ff00;
+  text-shadow: 0 0 5px;
   font-size: x-large;
 }
 
