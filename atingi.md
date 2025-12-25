@@ -8,15 +8,15 @@ permalink: /atingo/
 
 ### Asembleo
 
-Ni verŝajne havos asembleon en la kongreso. La lokon, kie trovi ĝin ni anoncos
-kiam ni ekscias.
+Ni havos [asembleon](https://events.ccc.de/congress/2025/hub/en/assembly/detail/esperanto)
+en la kongreso. Vi trovas nin an Salono Y en la dua etaĝo.
+Jen la [ekzakta loko](https://39c3.c3nav.de/l/esperanto/@2,215.29,181.17,6).
 
 
 ### Kurseto
 
-Ni okazigos kurseton de Esperanto dum la kongreso. La ekzaktan tempon kaj lokon
-ni anoncos ĉi tie.
-
+Ni okazigos kurseton de Esperanto dum la kongreso. Jen la
+[oficiala anonco](https://events.ccc.de/congress/2025/hub/en/event/detail/esperanto-schnupperkurs-esperanto-lightning-c_uzyw).
 
 ### Kradvorto
 

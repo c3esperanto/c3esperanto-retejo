@@ -21,21 +21,22 @@ constructed languages.
 
 ### Assembly
 
-We will have an assembly at the congress. The exact location we will announce
-here, as soon as we know it.
+We will have an [assembly](https://events.ccc.de/congress/2025/hub/en/assembly/detail/esperanto)
+at the congress. Feel free to find us at [this location](https://39c3.c3nav.de/l/esperanto/@2,215.29,181.17,6).
 
 
 ### Teaser course
 
-There will be a teaser course about Esperanto at the congress. Exact time and
-location we will announce here.
+There will be a teaser course about Esperanto at the congress. See the
+[official announcment](https://events.ccc.de/congress/2025/hub/en/event/detail/esperanto-schnupperkurs-esperanto-lightning-c_uzyw).
+
 
 
 ### T-shirts and other stuff
 
-As usual we esperantized the disign of the congress. You can order for example
+As usual we esperantized the design of the congress. You can order for example
 [shirts](https://www.redbubble.com/i/hoodie/Esperanto-povocikloj-39C3-by-ShopEvaF/175518042.UP7IL)
-and other suff with the esperantized motive of the congress.
+and other stuff with the esperantized motive of the congress.
 
 
 ### Contact us
@@ -49,7 +50,7 @@ our assembly to have chat with us, drink a Tschunk or a Mate.
 * [lernu.net](https://lernu.net)
 * [duolingo.com](https://duolingo.com)
 
-If you start learning before christmas, you'll be able to speak simple sentences at congress.
+If you start learning before Christmas, you'll be able to speak simple sentences at congress.
 
 
 ## Resources
