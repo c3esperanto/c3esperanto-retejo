@@ -1,6 +1,3 @@
-/*
-   original: https://github.com/pages-themes/hacker
-*/
 
 @font-face {
     font-family: 'jersey10';
@@ -56,16 +53,22 @@
     --color-additional-05: #ea6f82;
     --color-additional-06: #f88a30;
     --color-additional-07: #ffbc40;
-
 }
 
+$body-background: var(--color-dark) !default;
+$body-foreground: var(--color-neutral) !default;
+$hr-color: var(--color-primary) !default;
+$header: var(--color-primary) !default;
+$speech-bubble: var(--color-additional-02) !default;
+$link-color: var(--color-additional-02) !default;
+$blockquote-color: var(--color-additional-03) !default;
 
 
 body {
   margin: 0;
   padding: 0;
-  background: var(--color-dark);
-  color: var(--color-neutral);
+  background: $body-background;
+  color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
   font-family: Hack;
@@ -100,40 +103,193 @@ li {
 */
 
 header {
-  background: var(--color-dark);
-  border-bottom: 1px dashed var(--color-neutral); //header;
-  padding: 20px;
-  margin: 0 0 40px 0;
+    border-bottom: 1px dashed $hr-color; //header;
+    padding: 20px;
+    margin: 0 0 40px 0;
 }
 
-.headline {
+.banner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    vertical-align: middle;
+    min-height: calc(25vw);
     text-align: center;
     font-family: jersey10;
     font-size: 52pt;
     font-kerning: none;
-    min-height: 5em;
 }
 
-@keyframes cycles {
-    0% {font-weight: 10;}
-    50% {font-weight: 100;}
-    100% {font-weight: 10;}
+.trilog {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
 }
-@keyframes cycles-backwards {
-    0% {font-weight: 100;}
-    50% {font-weight: 10;}
-    100% {font-weight: 100;}
+
+.civitano {
+    flex-grow: 1;
+    position: relative;
+    width: 20%;
+    min-height: calc(25vw + 12em);
+}
+
+.civitano > img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 25vw;
+}
+
+.speech-bubbles {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    translate: -50% 0;
+    min-width: 100%;
+}
+
+.speech-bubbles > p {
+    position: absolute;
+    background: $speech-bubble;
+    padding: 1em;
+    height: 4em;
+    border-radius: .4em;
+}
+
+.speech-bubbles > p:after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 32px solid transparent;
+    border-top-color: $speech-bubble;
+    border-bottom: 0;
+    margin-left: -1em;
+    margin-bottom: -2em;
+}
+
+#adam p:after {
+    border-left: 0;
+}
+#adam p {
+    left: 40%;
+    translate: -50% 0;
+}
+#mona p:after {
+    border-left: 0;
+}
+#mona p {
+    left: 30%;
+    translate: -50% 0;
+}
+#barbara p:after {
+    border-right: 0;
+}
+#barbara p {
+    left: 0%;
+    translate: -50% 0;
+}
+#mona > img {
+    transform-origin: bottom center;
+    animation: mona 40s cubic-bezier(.7,0,.3,1) both;
+}
+
+#speech-1 { animation: speech-1 40s infinite; }
+#speech-2 { animation: speech-2 40s infinite; }
+#speech-3 { animation: speech-3 40s infinite; }
+#speech-4 { animation: speech-4 40s infinite; }
+#speech-5 { animation: speech-5 40s infinite; }
+#speech-6 { animation: speech-6 40s infinite; }
+#esperanto {     animation: esperanto 40s cubic-bezier(.7,0,.3,1) both infinite; }
+#congress-motto {
+    transform-origin: top center;
+    animation: congress-motto 40s cubic-bezier(.7,0,.3,1) both infinite;
+}
+
+@keyframes speech-1 {
+    0% { opacity: 0; }
+    8% {opacity: 0; }
+    10% {opacity: 1}
+    13% {opacity: 1; }
+    21% {opacity: 1; }
+    23% {opacity: 0; }
+    100% {opacity: 0; }
+}
+@keyframes speech-2 {
+    0% { opacity: 0; }
+    21% { opacity: 0; }
+    23% {opacity: 1; }
+    29% { opacity: 1; }
+    31% {opacity: 0; }
+    100% {opacity: 0; }
+}
+@keyframes speech-3 {
+    0% { opacity: 0; }
+    29% { opacity: 0; }
+    31% {opacity: 1; }
+    46% {opacity: 1; }
+    48% {opacity: 0; }
+    100% {opacity: 0; }
+}
+@keyframes speech-4 {
+    0% { opacity: 0; }
+    46% { opacity: 0; }
+    48% { opacity: 1; }
+    56% {opacity: 1; }
+    58% {opacity: 0; }
+    100% {opacity: 0; }
+}
+@keyframes mona {
+    0% { transform: scaleY(0); }
+    54% { transform: scaleY(0); }
+    56% { transform: scaleY(1); }
+    98% { transform: scaleY(1); }
+    100% { transform: scaleY(1); }
+}
+@keyframes speech-5 {
+    0% { opacity: 0; }
+    56% { opacity: 0; }
+    58% {opacity: 1; }
+    64% {opacity: 1; }
+    68% {opacity: 0; }
+    100% {opacity: 0; }
+}
+@keyframes speech-6 {
+    0% { opacity: 0; }
+    64% { opacity: 0; }
+    68% { opacity: 1; }
+    76% {opacity: 1; }
+    78% {opacity: 0;}
+    100% {opacity: 0; }
+}
+@keyframes esperanto {
+    0% { transform: scaleX(0); }
+    76% { transform: scaleX(0); }
+    78% { transform: scaleX(1); }
+    86% { transform: scaleX(1); }
+    88% { transform: scaleX(0);}
+    100% { transform: scaleX(0); }
+}
+@keyframes congress-motto {
+    0% { transform: scaleY(0); }
+    88% { transform: scaleY(0); }
+    90% { transform: scaleY(1); }
+    98% { transform: scaleY(1); }
+    100% { transform: scaleY(0); }
 }
 
 #esperanto {
-    color: var(--color-primary);
+    color: $header;
     text-transform: uppercase;
-    animation: cycles 5s infinite;
 }
 
 
 #congress-title {
-    color: var(--color-neutral);
+    color: $body-foreground;
 }
 
 #congress-title > span:first-child {
@@ -141,15 +297,6 @@ header {
 }
 #congress-title > span:nth-child(2) {
     animation: cycles 5s infinite;
-}
-
-#congress-motto {
-    position: relative;
-    text-transform: uppercase;
-}
-#congress-motto > span {
-    position: absolute;
-    top: 0; left: 0; right:0;
 }
 
 
@@ -165,7 +312,7 @@ header {
 
 .header-links a::after {
     content: " ★";
-    color: var(--color-primary);
+    color: $header;
     text-shadow: 0 0 5px;
     font-size: x-large;
 }
@@ -173,7 +320,7 @@ header {
 
 .header-links > a:first-child::before {
     content: "★ ";
-    color: var(--color-primary);
+    color: $header;
     text-shadow: 0 0 5px;
     font-size: x-large;
 }
@@ -183,7 +330,7 @@ header {
     .header-link {display: block;}
     .header-links a::before {
 	content: "★ ";
-	color: var(--color-primary);
+	color: $header;
 	text-shadow: 0 0 5px;
 	font-size: x-large;
     }
@@ -197,10 +344,10 @@ header h1 {
   text-align: center;
   font-weight: bold;
   font-family: "Hack";
-  color: var(--color-neutral);//$header;
+  color: $body-foreground;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px var(--color-primary),
-               0 0 10px var(--color-primary);
+               0 0 5px $header,
+               0 0 10px $header;
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -228,7 +375,7 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  color: var(--color-primary);
+  color: $header;
   text-shadow: 0 0 5px;
   letter-spacing: -0.03em;
 }
@@ -273,7 +420,7 @@ ul li {
 
 ul li::before {
     content: ">> ";
-    color: var(--color-primary);
+    color: $header;
 }
 
 blockquote {
@@ -283,11 +430,9 @@ blockquote {
 }
 
 pre {
-  background: var(--color-dark);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: var(--color-primary);
   border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
@@ -310,7 +455,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed var(--color-primary);
+  border-bottom: 1px dashed $header;
   padding: 5px 10px;
 }
 
@@ -321,8 +466,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed var(--color-primary);
-  color: var(--color-primary);
+  border-bottom: 1px dashed $header;
+  color: $hr-color;
 }
 
 /* Buttons
@@ -367,7 +512,7 @@ hr {
 */
 
 a {
-  color: var(--color-additional-03);
+  color: $link-color;
   text-shadow: 0 0 5px;
 }
 
@@ -398,7 +543,7 @@ a:active, a:focus {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  color: var(--color-primary);
+  color: $header;
   text-shadow: 0 0 5px;
   font-size: x-large;
 }

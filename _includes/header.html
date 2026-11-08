@@ -1,13 +1,30 @@
 <header>
-  <div class="headline">
-    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-	{% assign owner_first_name = site.owner | split: " " %}
-	<div id="esperanto">Esperanto</div>
-	<div id="congress-title"><span>40C3</span></div>
-	<div id="congress-motto"><span>modelcivitanoj</span></div>
-    </a>
-  </div>
-  <div class="header-links">
-      {% include links.html %}
-  </div>
+    <div class="trilog">
+	<div class="civitano" id="adam">
+	    <div class="speech-bubbles">
+		<p id="speech-1">Ĉu vi parolas Esperanton?</p>
+		<p id="speech-3">Bonege, do ni renkontiĝu ĉe la Esperanto Asembleo</p>
+	    </div>
+	    <img src="/assets/Adam.svg">
+	</div>
+	<div class="civitano" id="mona">
+	    <div class="speech-bubbles">
+		<p id="speech-5">Jes, ekzistas.</p>
+		<p id="speech-6">Vi estas bonvenaj. Ni ĝojas.</p>
+	    </div>
+	    <img src="/assets/Mona.svg">
+	</div>
+	<div class="civitano" id="barbara">
+	    <div class="speech-bubbles">
+		<p id="speech-2">Jes, certe.</p>
+		<p id="speech-4">Ho, ĉu ekzistas?
+	    </div>
+	    <img src="/assets/Barbara.svg">
+	</div>
+    </div>
+    <div class="banner" id="esperanto">Esperanto</div>
+    <div class="banner" id="congress-motto">Modelaj civitanoj</div>
+    <div class="header-links">
+	{% include links.html %}
+    </div>
 </header>
