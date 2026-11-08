@@ -2,58 +2,73 @@
    original: https://github.com/pages-themes/hacker
 */
 
-@import "rouge-base16-dark";
+@font-face {
+    font-family: 'jersey10';
+    src: url('/fonts/jersey-10-latin-400-normal.ttf') format('truetype');
+    src: url('/fonts/jersey-10-latin-400-normal.woff') format('woff');
+    src: url('/fonts/jersey-10-latin-400-normal.woff2') format('woff2');
+}
 
 @font-face {
-    font-family: 'OfficerSans';
-    src: url(/fonts/OfficerSans/OfficerSansWeb-Regular.woff) format("woff"),
-	 url(/fonts/OfficerSans/OfficerSansWeb-Regular.woff2) format("woff2");
-    font-weight: regular;
+    font-family: 'Hack';
+    font-weight: 400;
     font-style: normal;
+    src: url('/fonts/Hack-Regular.ttf') format('truetype');
+    src: url('/fonts/Hack-Regular.woff') format('woff');
+    src: url('/fonts/Hack-Regular.woff2') format('woff2');
 }
+
 @font-face {
-    font-family: 'OfficerSans';
-    src: url(/fonts/OfficerSans/OfficerSansWeb-Bold.woff) format("woff"),
-	 url(/fonts/OfficerSans/OfficerSansWeb-Bold.woff2) format("woff2");
-    font-weight: bold;
+    font-family: 'Hack';
+    font-weight: 400;
+    font-style: italic;
+    src: url('/fonts/Hack-Italic.ttf') format('truetype');
+    src: url('/fonts/Hack-Italic.woff') format('woff');
+    src: url('/fonts/Hack-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hack';
+    font-weight: 700;
     font-style: normal;
-}
-@font-face {
-    font-family: 'OfficerSans';
-    src: url(/fonts/OfficerSans/OfficerSansWeb-RegularItalic.woff) format("woff"),
-	 url(/fonts/OfficerSans/OfficerSansWeb-RegularItalic.woff2) format("woff2");
-    font-weight: regular;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'OfficerSans';
-    src: url(/fonts/OfficerSans/OfficerSansWeb-BoldItalic.woff) format("woff"),
-	 url(/fonts/OfficerSans/OfficerSansWeb-BoldItalic.woff2) format("woff2");
-    font-weight: bold;
-    font-style: italic;
+    src: url('/fonts/Hack-Bold.ttf') format('truetype');
+    src: url('/fonts/Hack-Bold.woff') format('woff');
+    src: url('/fonts/Hack-Bold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Kario';
-	src: URL('/fonts/Kario/Kario39C3Var-Roman.ttf') format('truetype');
-	src: URL('/fonts/Kario/Kario39C3Var-Roman.woff') format('woff');
-	src: URL('/fonts/Kario/Kario39C3Var-Roman.woff2') format('woff2');
+    font-family: 'Hack';
+    font-weight: 700;
+    font-style: italic;
+    src: url('/fonts/Hack-BoldItalic.ttf') format('truetype');
+    src: url('/fonts/Hack-Bolditalic.woff') format('woff');
+    src: url('/fonts/Hack-Bolditalic.woff2') format('woff2');
 }
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
-$header: $conifer !default;
-$blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
+:root {
+    --color-dark: #001300;
+    --color-neutral: #ebedf0;
+    --color-primary: #75b44b;
+    --color-additional-01: #15ada3;
+    --color-additional-02: #9fa4e8;
+    --color-additional-03: #c892d6;
+    --color-additional-04: #ee5da2;
+    --color-additional-05: #ea6f82;
+    --color-additional-06: #f88a30;
+    --color-additional-07: #ffbc40;
+
+}
+
+
 
 body {
   margin: 0;
   padding: 0;
-  background: #141414;
-  color: $body-foreground;
+  background: var(--color-dark);
+  color: var(--color-neutral);
   font-size: 16px;
   line-height: 1.5;
-  font-family: "OfficerSans";
+  font-family: Hack;
 }
 
 /* General & 'Reset' Stuff */
@@ -85,15 +100,15 @@ li {
 */
 
 header {
-  background: #141414;
-  border-bottom: 1px dashed $conifer; //header;
+  background: var(--color-dark);
+  border-bottom: 1px dashed var(--color-neutral); //header;
   padding: 20px;
   margin: 0 0 40px 0;
 }
 
 .headline {
     text-align: center;
-    font-family: Kario;
+    font-family: jersey10;
     font-size: 52pt;
     font-kerning: none;
     min-height: 5em;
@@ -111,23 +126,14 @@ header {
 }
 
 #esperanto {
-    color: #00ff00;
+    color: var(--color-primary);
     text-transform: uppercase;
     animation: cycles 5s infinite;
 }
 
 
-@keyframes language-cycle {
-    0% {font-weight: 10; opacity: 0;}
-    10% {opacity: 1;}
-    25% {font-weight: 100; opacity: 1;}
-    50% {font-weight: 10; opacity: 1;}
-    60% {opacity: 0;}
-    100% {font-weight: 10; opacity: 0;}
-}
-
 #congress-title {
-    color: #fff;
+    color: var(--color-neutral);
 }
 
 #congress-title > span:first-child {
@@ -146,32 +152,20 @@ header {
     top: 0; left: 0; right:0;
 }
 
-#congress-motto > span:first-child {
-    animation: language-cycle 10s infinite;
-}
-#congress-motto > span:nth-child(2) {
-    animation: language-cycle 10s infinite;
-    animation-delay: 5s;
-    opacity: 0;
-}
-
-
 
 .header-links {
     text-align: center;
-    font-family: Kario;
     font-size: larger;
     font-weight: 42;
 }
 
 .header-link {
     display: inline;
-    font-family: Kario;
 }
 
 .header-links a::after {
     content: " ★";
-    color: #00ff00;
+    color: var(--color-primary);
     text-shadow: 0 0 5px;
     font-size: x-large;
 }
@@ -179,7 +173,7 @@ header {
 
 .header-links > a:first-child::before {
     content: "★ ";
-    color: #00ff00;
+    color: var(--color-primary);
     text-shadow: 0 0 5px;
     font-size: x-large;
 }
@@ -189,7 +183,7 @@ header {
     .header-link {display: block;}
     .header-links a::before {
 	content: "★ ";
-	color: #00ff00;
+	color: var(--color-primary);
 	text-shadow: 0 0 5px;
 	font-size: x-large;
     }
@@ -202,11 +196,11 @@ header h1 {
   margin: 0;
   text-align: center;
   font-weight: bold;
-  font-family: "OfficerSans";
-  color: $conifer;//$header;
+  font-family: "Hack";
+  color: var(--color-neutral);//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px #00ff00,
-               0 0 10px #00ff00;
+               0 0 5px var(--color-primary),
+               0 0 10px var(--color-primary);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -214,7 +208,7 @@ header h1 {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #b69dfe;
+  color: var(--color-additional-01);
 }
 
 a:link {
@@ -234,8 +228,7 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: "OfficerSans";
-  color: #00ff00;
+  color: var(--color-primary);
   text-shadow: 0 0 5px;
   letter-spacing: -0.03em;
 }
@@ -280,21 +273,21 @@ ul li {
 
 ul li::before {
     content: ">> ";
-    color: #30ff30;
+    color: var(--color-primary);
 }
 
 blockquote {
-  color: $blockquote-color;
+  color: var(--color-additional-03);
   padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  border-left: 1px dotted var(--color-additional-03);
 }
 
 pre {
-  background: #141414;
+  background: var(--color-dark);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #00ff00;
+  color: var(--color-primary);
   border-radius: 2px;
   text-wrap: normal;
   overflow: auto;
@@ -306,7 +299,7 @@ code.highlighter-rouge {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: var(--color-additional-03);
   border-radius: 2px;
 }
 
@@ -317,7 +310,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #00ff00;
+  border-bottom: 1px dashed var(--color-primary);
   padding: 5px 10px;
 }
 
@@ -328,8 +321,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #00ff00;
-  color: #00ff00;
+  border-bottom: 1px dashed var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* Buttons
@@ -374,7 +367,7 @@ hr {
 */
 
 a {
-  color: #B2AAFF;
+  color: var(--color-additional-03);
   text-shadow: 0 0 5px;
 }
 
@@ -405,7 +398,7 @@ a:active, a:focus {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  color: #00ff00;
+  color: var(--color-primary);
   text-shadow: 0 0 5px;
   font-size: x-large;
 }
