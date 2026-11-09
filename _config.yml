@@ -3,3 +3,7 @@ exclude:
   - README.md
   - hacker-blog-master/
   - master.zip
+
+collections:
+  sections:
+    output: false          # don't emit /sections/xxx.html

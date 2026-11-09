@@ -1,26 +1,28 @@
 ---
-layout: page
 title: Atingi nin?
-permalink: /atingo/
+anchor: atingi
+order: 2
 ---
 
 ## 39a ĥaosa komunikada kongreso
 
 ### Asembleo
 
+Ni verŝajne havos asembleon por la 40c3. Detalojn ni anoncos ĉi tie.
+
+<!--
 Ni havos [asembleon](https://events.ccc.de/congress/2025/hub/en/assembly/detail/esperanto)
 en la kongreso. Vi trovas nin an Salono Y en la dua etaĝo.
 Jen la [ekzakta loko](https://39c3.c3nav.de/l/esperanto/@2,215.29,181.17,6).
-
+-->
 
 ### Kurseto
 
-Ni okazigos kurseton de Esperanto dum la kongreso. Jen la
-[oficiala anonco](https://events.ccc.de/congress/2025/hub/en/event/detail/esperanto-schnupperkurs-esperanto-lightning-c_uzyw).
+Ankaŭ ĉi jare ni okazigos kurseton dum la kongreso. Detaloj aperos ĉi tie.
 
 ### Kradvorto
 
-En la fediverso ni uzas la kradvorton #39c3eo. Tie ni hupas sciindaĵojn pri la
+En la fediverso ni uzas la kradvorton #40c3eo. Tie ni hupas sciindaĵojn pri la
 kongreso kaj Esperanto. Vi povas hupi en tiu kradvorto, se vi volas kontakti
 nin dum la kongreso.
 

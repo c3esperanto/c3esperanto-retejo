@@ -53,16 +53,28 @@
     --color-additional-05: #ea6f82;
     --color-additional-06: #f88a30;
     --color-additional-07: #ffbc40;
+
+    --trilog-height: calc(25vw + 12rem);
 }
 
 $body-background: var(--color-dark) !default;
 $body-foreground: var(--color-neutral) !default;
+$accent: var(--color-additional-01) !default;
 $hr-color: var(--color-primary) !default;
 $header: var(--color-primary) !default;
 $speech-bubble: var(--color-additional-02) !default;
 $link-color: var(--color-additional-02) !default;
 $blockquote-color: var(--color-additional-03) !default;
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 6em;
+}
 
 body {
   margin: 0;
@@ -76,36 +88,48 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
 
 section {
   display: block;
-  margin: 0 0 20px 0;
+  margin: 2em 0;
+  position: relative;
+}
+
+hr.bleed-rule {
+  /* reset the UA box */
+  border: 0;                 /* KILLS the 1px inset on all four sides — must come before border-top */
+  margin: 0;                 /* kills 0.5em block margins AND the auto inline margins */
+  padding: 0;
+  height: 0;                 /* thickness comes from the border, not the box */
+
+  /* the rule itself */
+  border-top: 2px dashed $hr-color;
+
+  /* full bleed, centred, from an in-flow block */
+  margin-inline: calc(50% - 50vw);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+    margin: 0 0 20px;
 }
 
 li {
   line-height: 1.4 ;
 }
 
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
 header {
-    border-bottom: 1px dashed $hr-color; //header;
-    padding: 20px;
-    margin: 0 0 40px 0;
+      position: sticky;
+      top: calc(-1 * var(--trilog-height) - 2em);
+      z-index: 100;
+      background: $body-background;
+      border-bottom: 2px dashed $hr-color; //header;
+      padding: 20px 0px;
+      overflow-x: clip;
 }
 
 .banner {
@@ -114,7 +138,6 @@ header {
     left: 50%;
     translate: -50% 0;
     vertical-align: middle;
-    min-height: calc(25vw);
     text-align: center;
     font-family: jersey10;
     font-size: 52pt;
@@ -125,13 +148,14 @@ header {
     display: flex;
     width: 100%;
     margin-bottom: 2em;
+    height: var(--trilog-height);
 }
 
 .civitano {
     flex-grow: 1;
     position: relative;
     width: 20%;
-    min-height: calc(25vw + 12em);
+    min-height: var(--trilog-height);
 }
 
 .civitano > img {
@@ -176,8 +200,6 @@ header {
     border-left: 0;
 }
 #adam p {
-    left: 40%;
-    translate: -50% 0;
 }
 #mona p:after {
     border-left: 0;
@@ -300,17 +322,22 @@ header {
 }
 
 
-.header-links {
+nav {
     text-align: center;
     font-size: larger;
     font-weight: 42;
+    background: $body-background;
+
+    scroll-target-group: auto;
 }
 
-.header-link {
-    display: inline;
+nav a:target-current {
+    color: $accent;
+    border-bottom: 2px solid currentColor;
+    font-weight: 700;
 }
 
-.header-links a::after {
+nav a::after {
     content: " ★";
     color: $header;
     text-shadow: 0 0 5px;
@@ -318,7 +345,7 @@ header {
 }
 
 
-.header-links > a:first-child::before {
+nav > a:first-child::before {
     content: "★ ";
     color: $header;
     text-shadow: 0 0 5px;
@@ -328,7 +355,7 @@ header {
 @media (max-width: 600px) {
     .headline {font-size: 36pt;}
     .header-link {display: block;}
-    .header-links a::before {
+    nav a::before {
 	content: "★ ";
 	color: $header;
 	text-shadow: 0 0 5px;
@@ -362,12 +389,10 @@ a:link {
   text-decoration: none;
 }
 
-/* Main Content
-*/
-
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
+main {
+    width: 100%;
+    margin-top: 2em;
+    -webkit-font-smoothing: antialiased;
 }
 section img {
   max-width: 100%
@@ -380,29 +405,29 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.03em;
 }
 
-#main_content h1 {
+main h1 {
   font-size: 30px;
 }
 
-#main_content h2 {
+main h2 {
   font-size: 24px;
 }
 
-#main_content h3 {
+main h3 {
   font-size: 18px;
 }
 
-#main_content h4 {
+main h4 {
   font-size: 14px;
 }
 
-#main_content h5 {
+main h5 {
   font-size: 12px;
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
 
-#main_content h6 {
+main h6 {
   font-size: 12px;
   text-transform: uppercase;
   color: #999;
@@ -461,13 +486,6 @@ th {
 
 td {
   padding: 5px 10px;
-}
-
-hr {
-  height: 0;
-  border: 0;
-  border-bottom: 1px dashed $header;
-  color: $hr-color;
 }
 
 /* Buttons
@@ -539,15 +557,13 @@ a:active, a:focus {
 
 /* Make footer stick to bottom */
 
-.pagination, footer {
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: $header;
-  text-shadow: 0 0 5px;
-  font-size: x-large;
+footer {
+    display: flex;
+    margin: 4rem 0;
 }
 
-#wrapper {
-  min-height: calc(100vh - 100px);
+footer > img {
+    flex-grow: 1;
+    width: 25vw;
+    padding: 0 10%;
 }

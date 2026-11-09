@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign sections = site.sections | sort: "order" %}
+<main>
+  {% for s in sections %}
+    <section id="{{ s.anchor }}" class="section" data-nav="{{ s.nav | default: s.title }}">
+      <h1 class="section-title">{{ s.title }}</h1>
+      {{ s.content }}
+    </section>
+    <hr class="bleed-rule" role="presentation">
+  {% endfor %}
+</main>

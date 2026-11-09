@@ -1,3 +1,4 @@
+{% assign sections = site.sections | sort: "order" %}
 <header>
     <div class="trilog">
 	<div class="civitano" id="adam">
@@ -24,7 +25,9 @@
     </div>
     <div class="banner" id="esperanto">Esperanto</div>
     <div class="banner" id="congress-motto">Modelaj civitanoj</div>
-    <div class="header-links">
-	{% include links.html %}
-    </div>
+    <nav>
+      {% for s in sections %}
+        <a href="#{{ s.anchor }}">{{ s.nav | default: s.title }}</a>
+      {% endfor %}
+    </nav>
 </header>

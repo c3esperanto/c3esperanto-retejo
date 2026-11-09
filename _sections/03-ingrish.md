@@ -1,7 +1,8 @@
 ---
-layout: page
 title: For those who don't understand
-permalink: /ingrish/
+nav: I don't understand a thing
+order: 3
+anchor: ingrish
 ---
 
 
@@ -17,31 +18,37 @@ Esperanto](https://en.wikipedia.org/wiki/Esperanto) as well as other
 constructed languages.
 
 
-## At 39c3
+## At 40c3
 
 ### Assembly
 
+We submitted an assembly request. Once we know details about our assembly we
+will anounce it here.
+
+<!--
 We will have an [assembly](https://events.ccc.de/congress/2025/hub/en/assembly/detail/esperanto)
 at the congress. Feel free to find us at [this location](https://39c3.c3nav.de/l/esperanto/@2,215.29,181.17,6).
-
+-->
 
 ### Teaser course
 
-There will be a teaser course about Esperanto at the congress. See the
-[official announcment](https://events.ccc.de/congress/2025/hub/en/event/detail/esperanto-schnupperkurs-esperanto-lightning-c_uzyw).
-
+There will be a teaser course about Esperanto at the congress. Details will be
+announced here.
 
 
 ### T-shirts and other stuff
 
+We will see if we also this year will have an Esperanto version of the congress
+design. Esperanto 40c3 merch will be anounced here.
+<!--
 As usual we esperantized the design of the congress. You can order for example
 [shirts](https://www.redbubble.com/i/hoodie/Esperanto-povocikloj-39C3-by-ShopEvaF/175518042.UP7IL)
 and other stuff with the esperantized motive of the congress.
-
+-->
 
 ### Contact us
 
-You can use the hashtag #39c3eo on fediverse. Of course you can also come to
+You can use the hashtag #40c3eo on fediverse. Of course you can also come to
 our assembly to have chat with us, drink a Tschunk or a Mate.
 
 
@@ -50,7 +57,8 @@ our assembly to have chat with us, drink a Tschunk or a Mate.
 * [lernu.net](https://lernu.net)
 * [duolingo.com](https://duolingo.com)
 
-If you start learning before Christmas, you'll be able to speak simple sentences at congress.
+If you start learning before Christmas, you'll be able to speak simple
+sentences at congress.
 
 
 ## Resources
