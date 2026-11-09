@@ -4,7 +4,7 @@ anchor: atingi
 order: 2
 ---
 
-## 39a ĥaosa komunikada kongreso
+## 40a ĥaosa komunikada kongreso
 
 ### Asembleo
 
